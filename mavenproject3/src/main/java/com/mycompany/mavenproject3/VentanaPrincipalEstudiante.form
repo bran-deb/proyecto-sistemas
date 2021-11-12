@@ -89,11 +89,17 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="Videos"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonVideosActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="botonIngresarExamen">
       <Properties>
         <Property name="label" type="java.lang.String" value="Ingresar a un Examen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonIngresarExamenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Label" name="label2">
       <Properties>

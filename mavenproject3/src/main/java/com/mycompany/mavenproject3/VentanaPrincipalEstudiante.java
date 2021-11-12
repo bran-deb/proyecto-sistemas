@@ -51,8 +51,18 @@ public class VentanaPrincipalEstudiante extends javax.swing.JFrame {
         });
 
         botonVideos.setLabel("Videos");
+        botonVideos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonVideosActionPerformed(evt);
+            }
+        });
 
         botonIngresarExamen.setLabel("Ingresar a un Examen");
+        botonIngresarExamen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonIngresarExamenActionPerformed(evt);
+            }
+        });
 
         label2.setText("Notificaciones");
 
@@ -111,6 +121,14 @@ public class VentanaPrincipalEstudiante extends javax.swing.JFrame {
         new VentanaEntrarReunion().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_botonIngresarReunionActionPerformed
+
+    private void botonIngresarExamenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIngresarExamenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonIngresarExamenActionPerformed
+
+    private void botonVideosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVideosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonVideosActionPerformed
 
     /**
      * @param args the command line arguments

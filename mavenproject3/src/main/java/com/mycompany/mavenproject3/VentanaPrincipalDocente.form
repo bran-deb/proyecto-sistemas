@@ -71,16 +71,25 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="Examenes pasados"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonExamenesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="botonVideos">
       <Properties>
         <Property name="label" type="java.lang.String" value="Edicion de Videos"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonVideosActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="botonCrearExamen">
       <Properties>
         <Property name="label" type="java.lang.String" value="Crear un examen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonCrearExamenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Label" name="label1">
       <Properties>

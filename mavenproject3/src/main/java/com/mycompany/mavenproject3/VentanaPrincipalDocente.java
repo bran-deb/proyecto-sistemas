@@ -46,10 +46,25 @@ public class VentanaPrincipalDocente extends javax.swing.JFrame {
         });
 
         botonExamenes.setLabel("Examenes pasados");
+        botonExamenes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonExamenesActionPerformed(evt);
+            }
+        });
 
         botonVideos.setLabel("Edicion de Videos");
+        botonVideos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonVideosActionPerformed(evt);
+            }
+        });
 
         botonCrearExamen.setLabel("Crear un examen");
+        botonCrearExamen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCrearExamenActionPerformed(evt);
+            }
+        });
 
         label1.setAlignment(java.awt.Label.CENTER);
         label1.setText("Menu Principal ");
@@ -101,6 +116,18 @@ public class VentanaPrincipalDocente extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_botonCrearReunionActionPerformed
+
+    private void botonExamenesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonExamenesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonExamenesActionPerformed
+
+    private void botonCrearExamenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCrearExamenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonCrearExamenActionPerformed
+
+    private void botonVideosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVideosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonVideosActionPerformed
 
     /**
      * @param args the command line arguments
