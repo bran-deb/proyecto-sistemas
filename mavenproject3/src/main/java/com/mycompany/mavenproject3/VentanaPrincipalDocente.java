@@ -122,7 +122,9 @@ public class VentanaPrincipalDocente extends javax.swing.JFrame {
     }//GEN-LAST:event_botonExamenesActionPerformed
 
     private void botonCrearExamenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCrearExamenActionPerformed
-        // TODO add your handling code here:
+        crearExamen crearEx=new crearExamen();
+        crearEx.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_botonCrearExamenActionPerformed
 
     private void botonVideosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVideosActionPerformed
