@@ -123,7 +123,14 @@ public class VentanaPrincipalEstudiante extends javax.swing.JFrame {
     }//GEN-LAST:event_botonIngresarReunionActionPerformed
 
     private void botonIngresarExamenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIngresarExamenActionPerformed
-        // TODO add your handling code here:
+        ingresarAlExamen ingAEx = null;
+        try {
+            ingAEx = new ingresarAlExamen();
+        } catch (SQLException ex) {
+            Logger.getLogger(VentanaPrincipalEstudiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        ingAEx.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_botonIngresarExamenActionPerformed
 
     private void botonVideosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVideosActionPerformed
