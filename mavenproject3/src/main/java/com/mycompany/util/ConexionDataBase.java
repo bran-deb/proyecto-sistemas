@@ -120,5 +120,15 @@ public class ConexionDataBase {
         return res;
    }
     //fin nuevo codigo 12/11/2021 por Carlos Brian Revollo Villarroel
+    public static String getExamenes(String script) throws SQLException{
+        String res;
+        res = "";
+        Statement st=connection.createStatement();
+        ResultSet result=st.executeQuery(script);
+        res=""+result;
+        JOptionPane.showMessageDialog(null, res);
+        return res;
+    }
+    //fin nuevo codigo 12/11/2021 por Erick Mateo Mancilla Marañon
   
 }
