@@ -22,6 +22,7 @@ public class ingresarAlExamen extends javax.swing.JFrame {
         initComponents();
         ConexionDataBase.getInstance();
         String prueva=ConexionDataBase.getExamenes("select * from EXAMEN where IDEXAMEN = '2'");
+        
     }
 
     /**
@@ -35,20 +36,30 @@ public class ingresarAlExamen extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        examenes = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("seleccione examen");
 
         jButton1.setText("atraz");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        examenes.setText("jLabel2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(476, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(examenes)
+                    .addComponent(jLabel1))
                 .addGap(325, 325, 325)
                 .addComponent(jButton1)
                 .addGap(20, 20, 20))
@@ -60,11 +71,20 @@ public class ingresarAlExamen extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addComponent(jLabel1))
-                .addContainerGap(390, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(examenes)
+                .addContainerGap(354, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        VentanaPrincipalEstudiante ingAEx = null;
+        ingAEx = new VentanaPrincipalEstudiante();
+        ingAEx.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,6 +126,7 @@ public class ingresarAlExamen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel examenes;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
