@@ -5,6 +5,9 @@
  */
 package com.mycompany.mavenproject3;
 
+import com.mycompany.util.ConexionDataBase;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author brian
@@ -36,6 +39,11 @@ public class VentanaPrincipalDocente extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         botonCrearReunion.setLabel("Crear  reunion");
+        botonCrearReunion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCrearReunionActionPerformed(evt);
+            }
+        });
 
         botonExamenes.setLabel("Examenes pasados");
 
@@ -81,6 +89,18 @@ public class VentanaPrincipalDocente extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonCrearReunionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCrearReunionActionPerformed
+        // TODO add your handling code here:
+        int res = ConexionDataBase.crearReunion();
+        if(res != -1){
+            new VentanaReunion().setVisible(true);
+            this.dispose();
+        }else{
+            JOptionPane.showMessageDialog(null,"No se pudo crear la reunion","Error", JOptionPane.ERROR_MESSAGE);
+        }
+        
+    }//GEN-LAST:event_botonCrearReunionActionPerformed
 
     /**
      * @param args the command line arguments

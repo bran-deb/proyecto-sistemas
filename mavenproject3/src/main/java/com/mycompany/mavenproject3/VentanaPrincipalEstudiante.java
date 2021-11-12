@@ -37,6 +37,11 @@ public class VentanaPrincipalEstudiante extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         botonIngresarReunion.setLabel("Ingresar a la reunion");
+        botonIngresarReunion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonIngresarReunionActionPerformed(evt);
+            }
+        });
 
         botonExamenes.setLabel("Examenes pasados");
         botonExamenes.addActionListener(new java.awt.event.ActionListener() {
@@ -100,6 +105,12 @@ public class VentanaPrincipalEstudiante extends javax.swing.JFrame {
     private void botonExamenesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonExamenesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botonExamenesActionPerformed
+
+    private void botonIngresarReunionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIngresarReunionActionPerformed
+        // TODO add your handling code here:
+        new VentanaEntrarReunion().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_botonIngresarReunionActionPerformed
 
     /**
      * @param args the command line arguments

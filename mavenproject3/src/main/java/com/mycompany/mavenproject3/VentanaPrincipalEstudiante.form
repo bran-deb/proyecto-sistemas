@@ -73,6 +73,9 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="Ingresar a la reunion"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonIngresarReunionActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="botonExamenes">
       <Properties>

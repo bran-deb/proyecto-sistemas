@@ -44,6 +44,11 @@ public class VentanaElUsuario extends javax.swing.JFrame {
         });
 
         botonDocente.setLabel("Entrar Como Docente");
+        botonDocente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonDocenteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -77,7 +82,15 @@ public class VentanaElUsuario extends javax.swing.JFrame {
 
     private void botonEstudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEstudianteActionPerformed
         // TODO add your handling code here:
+        new VentanaPrincipalEstudiante().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_botonEstudianteActionPerformed
+
+    private void botonDocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonDocenteActionPerformed
+        // TODO add your handling code here:
+        new VentanaPrincipalDocente().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_botonDocenteActionPerformed
 
     /**
      * @param args the command line arguments

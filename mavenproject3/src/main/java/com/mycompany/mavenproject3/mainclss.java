@@ -5,10 +5,19 @@
  */
 package com.mycompany.mavenproject3;
 
+import com.mycompany.util.ConexionDataBase;
+import java.sql.SQLException;
+
 /**
  *
  * @author brian
  */
 public class mainclss {
-    
+    public static void main(String[] args) throws SQLException {
+        ConexionDataBase.getInstance();
+        //ConexionDataBase.borrarUsuarios();
+        //ConexionDataBase.createUsuariosInicio();
+        //ConexionDataBase.getUsuarios();
+        new VentanaElUsuario().setVisible(true);
+    }
 }
