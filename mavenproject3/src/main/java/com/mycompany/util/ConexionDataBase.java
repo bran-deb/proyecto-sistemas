@@ -100,9 +100,7 @@ public class ConexionDataBase {
         
     }
     
-    
-    //fin nuevo codigo 12/11/2021 por Carlos Brian Revollo Villarroel
-   public static int  crearReunion(){
+     public static int  crearReunion(){
        int res = -1;
         try {
             Statement stat = connection.createStatement();
@@ -121,4 +119,6 @@ public class ConexionDataBase {
         }
         return res;
    }
+    //fin nuevo codigo 12/11/2021 por Carlos Brian Revollo Villarroel
+  
 }
